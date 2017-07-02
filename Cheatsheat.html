@@ -5,7 +5,7 @@
     <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>Command Line</h1>
+    <h1>On the Command Line</h1>
     <h2>Handy Things To Know</h2>
       <ul>
         <li> cd: to change directories</li>
@@ -14,8 +14,12 @@
         <li> ls: gives you a list of the files in the current directory</li>
         <li> cd ..: moves you up a directory</li>
         <li> touch: to create an empty file such as a HTML file</li>
+        <li> rm -rf: deletes a whole directory. Can't be in it when you delete it.</li>
+        <li>mv: moves the content of the file into another. eg. mv favorite-things.html index.html</li>
       </ul>
+
     <h2>Git Stuff</h2>
+      <p>How to track, commit and push files to your GitHub account</p>
       <ol>
         <li>be in the folder you want to commit</li>
         <li>git status</li>
@@ -23,6 +27,62 @@
         <li>git add then the file name e.g. hello-world.html</li>
         <li>git commit -m "make a comment about the file"</li>
         <li>git log: shows our Git history</li>
-        <li>git remote add origin...</li><!--address from github repository that you set up-->
+        <li>git remote add origin https://github....</li><!--address from github repository that you set up-->
         <li>git push origin master</li>
       </ol>
+      <p>git clone (URL):to copy from GitHub we get the URL for the remote repository</p>
+
+      <h1>HTML Tags</h1>
+        <ul>
+          <li>!DOCTYPE html: tells the browser that this document contains HTML</li>
+          <li>ul: unordered list</li>
+          <li>ol: ordered list</li>
+          <li>title: sets the title for the web page browser tab.</li>
+          <li>body: this is the actual content of the page.</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      <h2>Inline elements</h2>
+        <ul>
+          <li>strong: bolds the text</li>
+          <li>em: italicize the text</li>
+          <li>a href="http://www.epicodus.com/">Epicodus< /a : the anchor tag a creates a link and the href attribute provides the web address the link will go to.</li>
+          <li> img src="kitten.jpeg" alt="a photo of a cute kitten": self closing tag that displays an image.</li>
+
+      <h1>CSS</h1>
+        <p>To link our CSS style sheet to our HTML page we need to type in the following under the head tag.</p>
+        <p>link href="css/styles.css" rel="stylesheet" type="text/css"</p>
+        <p> After this we have any other links, our title tags, and then the closing head tag.</p>
+
+      <h2>Rules</h2>
+      <p> h1 {</p>
+      <p>  color: blue;</p>
+      <p>  text-align: center;</p>
+      <p>}</p>
+
+      <p> h2 {</p>
+      <p>  font-style: italic;</p>
+      <p>  text-align: center;</p>
+      <p>}</p>
+
+      <p> p {</p>
+      <p>  font-family: sans-serif;</p>
+      <p>}</p>
+
+      <p> ul {</p>
+      <p>  font-size: 20px;</p>
+      <p>  line-height: 30px;</p>
+      <p>}</p>
+
+      <p>To change just one or more of the 'p' tags (or any other tag eg. h1,h2) you create a class.For Example:</p>
+      <p>p class="intro" then on the style sheet you type the changes just for that tag:</p>
+      <p> p.intro{</p>
+      <p> width: 50%;</p>
+      <p> font-style: italic;</p>
+      <p> font-weight: bold;</p>
+      <p>}</p>
+
+      <p>You can also use the tag: div class="nameofclass" to edit large amounts of text to a certain style. Where the changes you make are to end you need to close the tag with /div</p>
+      

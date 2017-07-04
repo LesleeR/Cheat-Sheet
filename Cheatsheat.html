@@ -7,6 +7,44 @@
   <body>
     <h1>On the Command Line</h1>
     <h2>Handy Things To Know</h2>
+      <table style="width:60%">
+        <tr>
+          <th>COMMAND</th>
+          <th>WHAT IT DOES</th>
+        </tr>
+        <tr>
+          <td> cd </td>
+          <td> to change directories </td>
+        </tr>
+        <tr>
+          <td> mkdir </td>
+          <td> make a new directory/folder </td>
+        </tr>
+        <tr>
+          <td> pwd </td>
+          <td> to find our location </td>
+        </tr>
+        <tr>
+          <td> ls </td>
+          <td> gives you a list of the files in the current directory </td>
+        </tr>
+        <tr>
+          <td> cd .. </td>
+          <td> moves you up a directory </td>
+        </tr>
+        <tr>
+          <td> touch </td>
+          <td> to create an empty file such as a HTML file </td>
+        </tr>
+        <tr>
+          <td> rm -rf </td>
+          <td> deletes a whole directory. Can't be in it when you delete it </td>
+        </tr>
+        <tr>
+          <td> mv </td>
+          <td> moves the comtemt of the file into another </td>
+        </tr>
+      </table>
       <ul>
         <li> cd: to change directories</li>
         <li> mkdir: make a new directory/folder</li>
@@ -24,7 +62,7 @@
         <li>be in the folder you want to commit</li>
         <li>git status</li>
         <li>git init: initializing a new Git repository</li>
-        <li>git add then the file name e.g. hello-world.html</li>
+        <li>git add then the file name e.g. hello-world.html</li> <!--you always need to use git add . before you can commit any changed that you have made.-->
         <li>git commit -m "make a comment about the file"</li>
         <li>git log: shows our Git history</li>
         <li>git remote add origin https://github....</li><!--address from github repository that you set up-->
@@ -91,3 +129,14 @@
       <p>}</p>
 
       <p>You can also use the tag: div class="nameofclass" to edit large amounts of text to a certain style. Where the changes you make are to end you need to close the tag with /div</p>
+
+      <p> We can also define a special style for individual tables!</p>
+      <p>e.g. <code>&lttable&gt</code> would become<p>
+      <p><code> &lttable id="t01"&gt</code><p>
+      <p>then on our CSS style sheet we can type:</p>
+      <p><code>table#t01 {<p>
+        <p>width: 100%;</p>
+        <p>background-color: #f1f1c1;<p>
+      <p>}</code><p>
+</body>
+</html>

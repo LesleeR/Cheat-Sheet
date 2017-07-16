@@ -45,7 +45,7 @@
           <td> moves the comtemt of the file into another </td>
         </tr>
       </table>
-      
+
     <h2>Git Stuff</h2>
       <p>How to track, commit and push files to your GitHub account</p>
       <ol>
@@ -55,11 +55,11 @@
         <li>git add then the file name e.g. hello-world.html</li> <!--you always need to use git add . before you can commit any changed that you have made.-->
         <li>git commit -m "make a comment about the file"</li>
         <li>git log: shows our Git history</li>
-        <li>git remote add origin https://github....</li><!--address from github repository that you set up-->
+        <li>git remote add origin https://github.... To check if a remote has already been set up, just enter git remote</li><!--address from github repository that you set up-->
         <li>git push origin master</li>
       </ol>
       <p>git clone (URL):to copy from GitHub we get the URL for the remote repository</p>
-
+<!--PUT HTML TAGS INTO A TABLE. STYLE IT USING A CLASS AS IN THE EXAMPLE AT THE END OF THIS PAGE-->
       <h1>HTML Tags</h1>
         <ul>
           <li>!DOCTYPE html: tells the browser that this document contains HTML</li>
@@ -128,5 +128,143 @@
         <p>width: 100%;</p>
         <p>background-color: #f1f1c1;<p>
       <p>}</code><p>
-</body>
+
+    <h1>Bootstrap</h1>
+    <p>Bootstrap is a front-end framework that is essentially a really big CSS stylesheet. It allows developers to quickly set up professional looking websites with minimal effort.</p>
+    <p>To integrate Bootstrap into our project we need to add one of these files (<code>bootstrap.css or bootstrap.min.css </code>) to our project's css folder. Then we must link to it in our site's <code>&lthead&gt</code> tags, just like our own stylesheet:</p>
+      <p><code>&lthead&gt</code></p>
+      <p><code>&ltlink href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"</code></p>
+
+    <h2>Containers</h2>
+    <p>Containers wrap our content nicely, and add padding that dynamically increases or decreases in size depending on the user's viewport.</p>
+    <p><code>&lt/head&gt</p>
+      <p>&ltbody&gt</p>
+      <p>&ltdiv class="container"&gt</p>
+      <p>....</p>
+      <p>&lt/div&gt</p></code>
+
+    <h2>Jumbotron</h2>
+    <p>Jumbotrons are primarily used to add emphasis to content on a page. Often they are placed at the top of the page to act as a header.</p>
+    <p>Just like a container, we can add a jumbotron by including a div with the <code>jumbotron</code> class wherever we'd like it to appear.</p>
+    <p><code>&ltdiv class="jumbotron"&gt</code>
+
+    <h2>Helper Classes</h2>
+    <p>These classes "help out" by adding additional styles to bootstrap elements.</p>
+    <table style="width:60%">
+      <tr>
+        <th>COMMAND</th>
+        <th>WHAT IT DOES/MEANS</th>
+      </tr>
+      <tr>
+        <td> bg </td>
+        <td> background </td>
+      </tr>
+      <tr>
+        <td> success </td>
+        <td> shade of green </td>
+      </tr>
+      <tr>
+        <td> info </td>
+        <td> shade of blue </td>
+      </tr>
+      <tr>
+        <td>primary</td>
+        <td> dark shade of blue</td>
+      </tr>
+      <tr>
+        <td>warning</td>
+        <td>orange</td>
+      </tr>
+      <tr>
+        <td>danger</td>
+        <td>red</td>
+      </tr>
+      <tr>
+        <td>.pull-left</td>
+        <td>Floats an element to the left</td>
+      </tr>
+      <tr>
+        <td>.center-block</td>
+        <td>Sets an element to display:block with margin-right:auto and margin-left:auto</td>
+      </tr>
+      <tr>
+        <td>.invisible</td>
+        <td>Forces an element to be invisible. Will take up space on page even though it is invisible</td>
+      </tr>
+      <tr>
+        <td>.close</td>
+        <td>Indicates a close icon</td>
+      </tr>
+      <tr>
+        <td>.caret</td>
+        <td>Indicates dropdown functionality (will reverse automatically in dropup menus)</td>
+      </tr>
+      <tr>
+        <td>.sr-only</td>
+        <td>Hides an element to all devices except screen readers</td>
+      </tr>
+      <tr>
+        <td>.alert</td>
+        <td>Creates an alert message box. can add -info for it to be a light blue box, or -danger for a red box</td>
+      </tr>
+      <tr>
+          <td>.btn</td>
+          <td>Creates a basic button (grey and rounded corners)</td>
+        </tr>
+        <tr>
+            <td>.btn-block</td>
+            <td>Creates a block level button that spans the entire width of the parent element</td>
+          </tr>
+        <tr>
+          <td>.btn-default</td>
+          <td>White background and grey border</td>
+        </tr>
+        <tr>
+          <td>.btn-group</td>
+          <td>Groups buttons together on a single line</td>
+        </tr>
+        <tr>
+          <td>lg</td>
+          <td>large</td>
+        </tr>
+        <tr>
+          <td>sm</td>
+          <td>small</td>
+        </tr>
+        <tr>
+          <td>xs</td>
+          <td>extra small</td>
+        </tr>
+        <tr>
+          <td>.caption</td>
+          <td>Adds a caption text inside a .thumbnail</td>
+        </tr>
+        <tr>
+          <td>.caret</td>
+          <td>Creates a caret arrow icon which indicates the button is a dropdown</td>
+        </tr>
+        <tr>
+          <td>.carousel</td>
+          <td>creates a carousel (slideshow)</td>
+        </tr>
+        <tr>
+          <td.col-*-*></td>
+          <td>Responsive grid.</td>
+        </tr>
+    </table>
+    <p><strong>There is so much more, look at www.w3schools.com/bootstrap</strong><p>
+
+    <h2>Panels</h2>
+    <p>In addition to wrapping contentin a box, it offers a section for a title and a body
+
+    <h2>Customising Styles in Bootstrap</h2>
+    <p>The Bootstrap website documents in detail how to use all of the styles it provides.</p>
+    <p>Sometimes you might want to override some of Bootstrap's default styles with your own. To do this you link your custom stylesheet <strong>below</strong> Bootstrap's stylesheet in the <code>&lthead&gt</code> tags of your HTML. eg</p>
+    <p><code> &lthead&gt</p>
+      <p>&ltlink href="css/bootstrap.css" rel="stylesheet" type="text/css"&gt</p>
+      <p>&ltlink href="css/styles.css" rel="stylesheet" type="text/css"&gt</p>
+      <p>...</p>
+    <p>The second stylesheet will override the first stylesheet.</p>
+    
+  </body>
 </html>
